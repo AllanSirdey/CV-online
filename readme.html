@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+
+    <title>README</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body >
+
+    <h1>Note technique</h1>
+    
+    <p>   
+        Ci dessous quelques détails technique relatifs à la création du projet "CV en ligne".<br/>
+        Le site a été développé avec l'éditeur Brackets.<br/>
+        Le code source est disponible sur mon espace github (https://github.com/AllanSirdey)
+    </p>
+    
+    <h2>HTML</h2>
+    <ul>
+        <li>Le site est compatible xHTML5 (sauf pour les balises où Angular est utilisé).</li>
+        <li>Externaliser les CSS et JavaScript : règle 16 opquest éco-conception web</li>
+        <li>Fournir une CSS print : règle 30 opquest éco-conception web</li>
+        <li>Les arrières-plan sont combinés dans un sprite CSS : règle 6 opquest webperf</li>
+        <li>Le code HTML est minifié : règle 9 opquest webperf</li>
+        
+    </ul>
+    
+    <h2>CSS</h2>
+    <ul>
+        <li>Le site est responsive grâce à <strong>Bootstrap v3</strong>.</li>
+        <li>J'ai ajouté quelques règles en plus, notamment pour la <strong>feuille de style "print" pour l'impression.</strong></li>
+        <li>Le design a été testé sur firefox 55 desktop, chrome 55 et internet explorer 11.</li>
+        <li>Le responsive a été testé sur chrome avec l'extension "Responsive Web Design Tester".</li>
+        <li>Utilisation des <strong>sprites css</strong> pour afficher les icônes des boutons sociaux.</li>
+        <li>La feuille de style principal "style.css" est validé par le validateur "W3C CSS Validation Service"</strong>.</li>
+        <li>La feuille de style principal "style.css" est validé par <strong>CSSLINT</strong> avec 0 erreurs et 0 warnings (après correction de 7 warnings).</li>
+        <li>La feuille de style principal "style.css" a été minifié grâce au site "cssminifier.com"</strong>.</li>
+        <li>Pour le design, je me suis inspiré du guide "Material Design" de Google, principalement pour les couleurs</strong>.</li>
+    </ul>
+    
+    <h2>JAVASCRIPT</h2>
+    
+    <ul>
+        <li>Utilisation de <strong>Jquery</strong> pour créer le menu responsive lorsque la largeur d'écran est réduite ( < 768px ).</li>
+        <li>Utilisation de Jquery et <strong>VanillaJS</strong> pour l'intégration du Konami Code.</li>
+        <li>Source: http://xumi.fr/articles/ajouter-un-konami-code-a-son-site</li>
+        
+        <li>Utilisateur de Vanilla JS lors du clic sur bouton "Click me".</li>
+        <li>Utilisateur de <strong>Angular</strong> pour l'include de fichier html externe (menu.html, informations.html).</li>
+        <li>Utilisation d'<strong>Ajax</strong> pour faire un appel à l'API Google Maps.</li>
+        <li>Javascript non validé par JSlint.</li>
+    </ul>
+    
+    <h2>AMÉLIORATIONS</h2>
+    
+    <ul>
+        <li>Manque d'inspiration pour l'utilisation de VanillaJS ou encore Angular.</li>
+        <li>Création d'un backend pour ajouter dynamiquement de nouvelles données (compétences, expériences, etc...)</li>
+    </ul>
+
+</body>
+
+</html>
